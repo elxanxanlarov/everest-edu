@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dp-align{
+  display: flex;
+  align-items: center;
+}
+.dp-beetween{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dp-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dp-cloumn{
+  display: flex;
+  flex-direction: column;
+}
+.my-container{
+  width: 90%;
+  margin: 0 auto;
+}
+a,.link{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}

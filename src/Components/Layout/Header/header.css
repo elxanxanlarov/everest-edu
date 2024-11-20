@@ -1,0 +1,49 @@
+.header .header-top {
+    padding: .8rem 0;
+    background-color: rgb(248, 246, 246);
+    /* box-shadow: 4px 5px 13px 0px rgba(0,0,0,0.75); */
+}
+.header .header-top .left p{
+    font-size: 1.2rem;
+}
+.header .header-top .right {
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.header .header-top .right >div{
+    gap: .6rem;
+}
+
+.header .header-top .right .icon{
+    color:#022161;
+    margin-bottom: .6rem;
+}
+.header .header-top .right .mail-icon{
+    font-size: 1.4rem;
+}
+.header .header-top .right .social-icon{
+    color:#022161;
+    font-size: 1.5rem;
+}
+.header .header-bottom .header-logo{
+    font-style: oblique;
+}
+.header .header-bottom .img-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+.header .header-bottom ul {
+    gap: 2.5rem;
+}
+.header .header-bottom ul li .link{
+    font-size: 1.3rem;
+    color:black;
+}
+
+@media (max-width: 768px) {
+    .rp-none{
+        display: none !important;
+    }
+}
