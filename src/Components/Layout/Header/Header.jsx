@@ -41,7 +41,7 @@ const Header = () => {
         <div className="my-container">
           <div className="dp-beetween">
             <div className="header-logo">
-              {/* <img src="../../../../public/WhatsApp Image 2024-11-07 at 16.29.38_031500ec.jpg" alt="" /> */}
+              {/* <img  src="../../../../public/WhatsApp Image 2024-11-07 at 16.29.38_031500ec.jpg" alt="" /> */}
             </div>
             <div>
               {/* <ul className="dp-align">

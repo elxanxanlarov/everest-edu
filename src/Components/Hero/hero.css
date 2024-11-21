@@ -44,6 +44,9 @@
     .rp-none{
         display: none !important;
     }
+    .dp-none{
+        display: block;
+    }
     .hero{
         height: 100%;
         padding: 2rem 1rem;

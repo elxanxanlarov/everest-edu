@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import "./hero.css";
 import { motion } from "framer-motion";
+import logoImage from "../../../public/newLogo.pgn.png"
+import heroBgVideo from "../../../src/assets/video/WhatsApp Video 2024-11-19 at 18.42.01_ac245bc0.mp4"
 const Hero = () => {
   const videoRef = useRef(null); 
   return (
@@ -25,7 +27,7 @@ const Hero = () => {
                     Uğura gedən yol buradan başlayır!" 
                   </p>
                   <span>Peşəkar təlimlərlə gələcəyini qur!</span>
-                  <img className="new-logo" src="../../../public/newLogo.pgn.png" alt="" />
+                  <img  className="new-logo dp-none" src={logoImage} alt="" />
                 </motion.div>
               </div>
             </div>
@@ -34,9 +36,7 @@ const Hero = () => {
                 <div className="video-block">
                   <video ref={videoRef} className="videoTag" autoPlay muted>
                     <source
-                      src={
-                        "../../../src/assets/video/WhatsApp Video 2024-11-19 at 18.42.01_ac245bc0.mp4"
-                      }
+                      src={heroBgVideo}
                       type="video/mp4"
                     />
                   </video>
