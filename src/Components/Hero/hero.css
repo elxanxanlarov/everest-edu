@@ -1,9 +1,9 @@
 
 .hero{
-    height: 80vh;
+    height: 105vh;
 }
 .hero .hero-con{
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
     
 }
@@ -14,11 +14,11 @@
     height: 100%;
 }
 .hero .hero-left .text-con p{
-    font-size: 2.3rem;
+    font-size: 2.6rem;
     font-weight: 500;
 }
 .hero .hero-left .text-con span{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .hero .hero-left .text-con p span{
     font-weight: 600;
@@ -39,6 +39,26 @@
 
 .dp-none{
     display: none;
+}
+
+.service{
+    background-color:#0E0E69;
+    padding: 2rem 0;
+}
+.service >h3{
+    color:#fff;
+    font-size: 2.4rem;
+}
+.service img{
+    height: 14rem;
+    border: 1px solid;
+}
+
+.service .cards {
+    padding: 4rem;
+}
+.service .card{
+    height: 26rem;
 }
 @media (max-width: 768px) {
     .rp-none{
@@ -90,5 +110,9 @@
     }
     .hero .hero-left .text-con span{
         font-size: 1rem;
+    }
+
+    .service .cards {
+        padding: 2rem;
     }
 }
