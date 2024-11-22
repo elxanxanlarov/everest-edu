@@ -1,17 +1,18 @@
 
 .hero{
-    height: 105vh;
+    height: 80vh;
+    overflow: hidden;
 }
 .hero .hero-con{
-    height: 100vh;
+    height: auto;
     overflow: hidden;
-    
 }
 
 .hero .hero-left {
     display: flex;
     align-items: center;
     height: 100%;
+    text-align: center;
 }
 .hero .hero-left .text-con p{
     font-size: 2.6rem;
@@ -48,7 +49,7 @@
     padding: 2rem 0;
 }
 .service >h3{
-    color:#fff;
+    color:black;
     font-size: 2.4rem;
 }
 
@@ -125,9 +126,10 @@
     }
 
     .service .cards {
-        padding: 2rem;
+        padding:1rem;
+        padding-top: 3rem;
     }
-    .service .card{
-        margin-top: 2rem;
+    .service .cards .card{
+        margin-top: 1rem;
     }
 }

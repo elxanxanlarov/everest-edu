@@ -3,13 +3,13 @@ import Hero from "../../Components/Hero/Hero";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{overflow:"hidden"}}>
       <Hero />
       <section className="service">
         <h3 className="text-center">Xidmətlər</h3>
         <div className="container">
           <div className="cards">
-            <div className="row g-4">
+            <div className="row g-5">
               <div className="col-md-4 col-sm-6 col-12">
                 <div data-aos="zoom-out-right" className="card p-2">
                   <div>
