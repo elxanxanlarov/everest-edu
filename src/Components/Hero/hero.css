@@ -41,17 +41,15 @@
     display: none;
 }
 
+
+
 .service{
-    background-color:#0E0E69;
+    background-color:#fff;
     padding: 2rem 0;
 }
 .service >h3{
     color:#fff;
     font-size: 2.4rem;
-}
-.service img{
-    height: 14rem;
-    border: 1px solid;
 }
 
 .service .cards {
@@ -59,7 +57,21 @@
 }
 .service .card{
     height: 26rem;
+    box-shadow: 5px 7px 19px 0px rgba(0,0,0,0.75);
+    position: relative;
+    padding: 2rem !important;
+    padding-top: 7rem !important;
 }
+.service .card img{
+    height:10rem;
+    width: 80%;
+    border: 1px solid;
+    position: absolute;
+    top:-3rem;
+    object-fit: fill;   
+}
+
+
 @media (max-width: 768px) {
     .rp-none{
         display: none !important;
@@ -114,5 +126,8 @@
 
     .service .cards {
         padding: 2rem;
+    }
+    .service .card{
+        margin-top: 2rem;
     }
 }
