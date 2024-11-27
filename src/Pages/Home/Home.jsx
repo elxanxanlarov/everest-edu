@@ -1,10 +1,30 @@
-import { useEffect } from "react";
-import Hero from "../../Components/Hero/Hero";
-
 const Home = () => {
   return (
-    <div style={{overflow:"hidden"}}>
-      <Hero />
+    <div style={{ overflow: "hidden" }}>
+      <main className="hero">
+        <div className="container">
+          <div className="hero-con">
+            <div className="logo-block">
+              <img src="../../../src/assets/image/logo.png" alt="" />
+            </div>
+            <div className="row">
+              <div className="col-md-6 col-sm-12 col-12">
+                <div className="hero-left">
+                  <p>Uğura gedən yol buradan başlayır!</p>
+                  <span>Peşəkar təlimlərlə gələcəyini qur!</span>
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-12 col-12">
+                <div className="hero-right">
+                  <div className="flags-img">
+                    <img src="../../../src/assets/image/flags.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
       <section className="service">
         <h3 className="text-center">Xidmətlər</h3>
         <div className="container">
@@ -13,7 +33,6 @@ const Home = () => {
               <div className="col-md-4 col-sm-6 col-12">
                 <div data-aos="zoom-out-right" className="card p-2">
                   <div>
-                    
                     <img
                       src="https://media.istockphoto.com/id/880562092/vector/great-britain-united-kingdom-flag.jpg?s=612x612&w=0&k=20&c=z6Qg_O-2pIcreAK3Fb8X003h2HRIFiRWNT8cg7hDfFo="
                       alt=""

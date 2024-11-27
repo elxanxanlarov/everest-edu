@@ -1,36 +1,123 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.dp-align{
+
+.dp-align {
   display: flex;
   align-items: center;
 }
-.dp-beetween{
+
+.dp-beetween {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.dp-center{
+
+.dp-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dp-cloumn{
+
+.dp-cloumn {
   display: flex;
   flex-direction: column;
 }
-html,body{
-overflow-x: hidden;
+
+html,
+body {
+  overflow-x: hidden;
 }
-.my-container{
+
+.my-container {
   width: 90%;
   margin: 0 auto;
 }
-a,.link{
+
+a,
+.link {
   text-decoration: none;
 }
-li{
+
+li {
   list-style: none;
+}
+
+
+.hero .hero-con {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero .logo-block{
+  width: 10rem;
+}
+
+.hero .logo-block img{
+  width: 100%;
+}
+.hero .hero-left{
+  padding: 4rem 0;
+}
+.hero .hero-left p{
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.hero .hero-left span{
+  font-size: 2rem;
+}
+.hero .hero-right .flags-img img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+
+.service .cards {
+  padding: 4rem;
+}
+
+.service .card {
+  height: 26rem;
+  box-shadow: 5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  padding: 2rem !important;
+  padding-top: 7rem !important;
+}
+
+.service .card img {
+  height: 10rem;
+  width: 80%;
+  border: 1px solid;
+  position: absolute;
+  top: -3rem;
+  object-fit: fill;
+}
+
+@media (max-width: 768px) {
+  .service .cards {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .service .cards .card {
+    margin-top: 1rem;
+  }
+
+  .hero .hero-left p{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .hero .hero-left span{
+    font-size: 1.4rem;
+  }
+  .hero .hero-right .flags-img {
+    z-index: -1;
+    position: relative;
+    bottom:6rem;
+    left:8rem
+  }
 }
