@@ -1,4 +1,5 @@
 import flags from "../../../src/assets/image/flags.png";
+import logo from "../../../src/assets/image/logo.png";
 const Home = () => {
   return (
     <div style={{ overflow: "hidden" }}>
@@ -7,7 +8,7 @@ const Home = () => {
           <div className="hero-con">
             <div className="hero-nav">
               <div className="logo-block">
-                <img src="../../../src/assets/image/logo.png" alt="" />
+                <img src={logo} alt="" />
               </div>
             </div>
             <div className="row">
