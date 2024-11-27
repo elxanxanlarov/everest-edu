@@ -73,10 +73,10 @@ li {
 
 .hero .hero-left .banner-1{
   position: absolute;
-  top:-5rem;
+  top:-8rem;
   right: 0;
   animation: infinite;
-  animation: rotate 15s linear infinite;
+  animation: rotate  50s linear infinite;
 }
 @keyframes rotate {
   from {
