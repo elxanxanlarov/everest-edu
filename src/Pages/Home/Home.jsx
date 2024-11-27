@@ -13,7 +13,7 @@ const Home = () => {
             </div>
             <div className="row">
               <div className="col-md-6 col-sm-12 col-12">
-                <div className="hero-left">
+                <div data-aos="fade-right" className="hero-left">
                   <p>Uğura gedən yol buradan başlayır!</p>
                   <span>Peşəkar təlimlərlə gələcəyini qur!</span> <br />
                   {/* <img src="https://skillgro-react.netlify.app/assets/img/banner/banner_shape01.png" alt="" /> */}
@@ -33,7 +33,7 @@ const Home = () => {
               <div className="col-md-6 col-sm-12 col-12">
                 <div className="hero-right">
                   <div className="flags-img">
-                    <img src={flags} alt="" />
+                    <img data-aos="fade-left" src={flags} alt="" />
                   </div>
                   <div>
                     <img
