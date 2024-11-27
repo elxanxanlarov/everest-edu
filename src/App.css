@@ -61,6 +61,7 @@ li {
 }
 .hero .hero-left{
   padding: 4rem 0;
+  position: relative;
 }
 .hero .hero-left p{
   font-size: 2.3rem;
@@ -69,11 +70,49 @@ li {
 .hero .hero-left span{
   font-size: 2rem;
 }
+
+.hero .hero-left .banner-1{
+  position: absolute;
+  top:-5rem;
+  right: 0;
+  animation: infinite;
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hero .hero-left img{
+  position: relative;
+}
+.hero .hero-left button{
+  background-color:#022161;
+  color:#fff;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.hero .hero-left .banner-4{
+  position: absolute;
+}
+.hero .hero-right {
+  position: relative;
+}
+
+.hero .hero-right .banner-3{
+position: absolute;
+top: -7rem;
+left: -3rem;
+z-index: -2;
+}
 .hero .hero-right .flags-img img{
   width: 100%;
   border-radius: 50%;
 }
-
 
 
 .service .cards {
@@ -96,8 +135,16 @@ li {
   top: -3rem;
   object-fit: fill;
 }
-
+.dp-none{
+  display: none;
+}
 @media (max-width: 768px) {
+  .dp-none{
+    display: block !important;
+  }
+  .rp-none{
+    display: none;
+  }
   .service .cards {
     padding: 1rem;
     padding-top: 3rem;

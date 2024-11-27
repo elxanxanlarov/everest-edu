@@ -1,23 +1,50 @@
+import flags from "../../../src/assets/image/flags.png";
 const Home = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <main className="hero">
         <div className="container">
           <div className="hero-con">
-            <div className="logo-block">
-              <img src="../../../src/assets/image/logo.png" alt="" />
+            <div className="hero-nav">
+              <div className="logo-block">
+                <img src="../../../src/assets/image/logo.png" alt="" />
+              </div>
             </div>
             <div className="row">
               <div className="col-md-6 col-sm-12 col-12">
                 <div className="hero-left">
                   <p>Uğura gedən yol buradan başlayır!</p>
-                  <span>Peşəkar təlimlərlə gələcəyini qur!</span>
+                  <span>Peşəkar təlimlərlə gələcəyini qur!</span> <br />
+                  {/* <img src="https://skillgro-react.netlify.app/assets/img/banner/banner_shape01.png" alt="" /> */}
+                  <button className="btn">Indi Qoşul</button>
+                  <img
+                    className="banner-1"
+                    src="https://thepixelcurve.com/edubin/lp/wp-content/uploads/sites/2/2024/04/EDUBIN0603-1.png"
+                    alt=""
+                  />
+                  <img
+                    className="banner-4 rp-none"
+                    src="https://thepixelcurve.com/edubin/lp/wp-content/uploads/sites/2/2024/04/EDUBIN0602-1.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div className="col-md-6 col-sm-12 col-12">
                 <div className="hero-right">
                   <div className="flags-img">
-                    <img src="../../../src/assets/image/flags.png" alt="" />
+                    <img src={flags} alt="" />
+                  </div>
+                  <div>
+                    <img
+                      className="banner-2"
+                      src="https://skillgro-react.netlify.app/assets/img/banner/banner_shape02.png"
+                      alt=""
+                    />
+                    <img
+                      className="banner-3 dp-none"
+                      src="https://thepixelcurve.com/edubin/lp/wp-content/uploads/sites/2/2024/04/EDUBIN0602-1.png"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
