@@ -1,8 +1,17 @@
+import { useState } from "react";
 import flags from "../../../src/assets/image/flags.png";
 import logo from "../../../src/assets/image/logo.png";
 const Home = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const x = (e.clientX - window.innerWidth / 2) / 30;
+    const y = (e.clientY - window.innerHeight / 2) / 30;
+    setPosition({ x, y });
+  };
+
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div style={{ overflow: "hidden" }} onMouseMove={handleMouseMove}>
       <main className="hero">
         <div className="container">
           <div className="hero-con">
@@ -16,35 +25,40 @@ const Home = () => {
                 <div data-aos="fade-right" className="hero-left">
                   <p>Uğura gedən yol buradan başlayır!</p>
                   <span>Peşəkar təlimlərlə gələcəyini qur!</span> <br />
-                  {/* <img src="https://skillgro-react.netlify.app/assets/img/banner/banner_shape01.png" alt="" /> */}
                   <button className="btn">Indi Qoşul</button>
                   <img
                     className="banner-1"
                     src="https://thepixelcurve.com/edubin/lp/wp-content/uploads/sites/2/2024/04/EDUBIN0603-1.png"
                     alt=""
+                    style={{
+                      transform: `translate(${position.x}px, ${position.y}px)`,
+                      transition: "transform 0.1s ease",
+                    }}
                   />
-                  <img
+                  {/* <img
                     className="banner-4 rp-none"
                     src="https://thepixelcurve.com/edubin/lp/wp-content/uploads/sites/2/2024/04/EDUBIN0602-1.png"
                     alt=""
-                  />
+                    style={{
+                      transform: `translate(${-position.x}px, ${-position.y}px)`,
+                      transition: "transform 0.1s ease",
+                    }}
+                  /> */}
                 </div>
               </div>
               <div className="col-md-6 col-sm-12 col-12">
                 <div className="hero-right">
                   <div className="flags-img">
-                    <img data-aos="fade-left" src={flags} alt="" />
-                  </div>
-                  <div>
                     <img
-                      className="banner-2"
-                      src="https://skillgro-react.netlify.app/assets/img/banner/banner_shape02.png"
+                      data-aos="fade-left"
+                      src={flags}
                       alt=""
-                    />
-                    <img
-                      className="banner-3 dp-none"
-                      src="https://thepixelcurve.com/edubin/lp/wp-content/uploads/sites/2/2024/04/EDUBIN0602-1.png"
-                      alt=""
+                      style={{
+                        transform: `translate(${position.x / 2}px, ${
+                          position.y / 2
+                        }px)`,
+                        transition: "transform 0.1s ease",
+                      }}
                     />
                   </div>
                 </div>
@@ -53,6 +67,32 @@ const Home = () => {
           </div>
         </div>
       </main>
+      <section className="about">
+        <div className="container">
+          <div className="about-con">
+            <div className="row">
+              <div data-aos="fade-right" className="col-md-6 col-sm-12 col-12">
+                <div>
+                  <img
+                    className="about-img "
+                    src="../../../src/assets/image/about-img.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div data-aos="fade-left" className="col-md-6 col-sm-12 col-12">
+                <h2>Haqqımızda</h2>
+                <p>
+                  
+                  Bu kurs sizə ingilis dilində ünsiyyət qurmaq, məqalə oxumaq və
+                  iş yerində daha effektiv olmaq imkanı verəcək. Başlanğıc və
+                  orta səviyyələr üçün uyğundur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="service">
         <h3 className="text-center">Xidmətlər</h3>
         <div className="container">

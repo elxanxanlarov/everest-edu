@@ -114,7 +114,10 @@ z-index: -2;
   border-radius: 50%;
 }
 
-
+.service h3{
+  font-size: 2.7rem;
+  padding: 2rem 0;
+}
 .service .cards {
   padding: 4rem;
 }
@@ -137,6 +140,10 @@ z-index: -2;
 }
 .dp-none{
   display: none;
+}
+.about .about-img{
+  width: 100%;
+  border-radius: 2rem;
 }
 @media (max-width: 768px) {
   .dp-none{
