@@ -1,6 +1,7 @@
 import { useState } from "react";
 import flags from "../../../src/assets/image/flags.png";
 import logo from "../../../src/assets/image/logo.png";
+import aboutImg from "../../../src/assets/image/about-img.jpg";
 const Home = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -73,21 +74,18 @@ const Home = () => {
             <div className="row">
               <div data-aos="fade-right" className="col-md-6 col-sm-12 col-12">
                 <div>
-                  <img
-                    className="about-img "
-                    src="../../../src/assets/image/about-img.jpg"
-                    alt=""
-                  />
+                  <img className="about-img " src={aboutImg} alt="" />
                 </div>
               </div>
               <div data-aos="fade-left" className="col-md-6 col-sm-12 col-12">
-                <h2>Haqqımızda</h2>
-                <p>
-                  
-                  Bu kurs sizə ingilis dilində ünsiyyət qurmaq, məqalə oxumaq və
-                  iş yerində daha effektiv olmaq imkanı verəcək. Başlanğıc və
-                  orta səviyyələr üçün uyğundur.
-                </p>
+                <div className="right">
+                  <h2>Haqqımızda</h2>
+                  <p>
+                    Bu kurs sizə ingilis dilində ünsiyyət qurmaq, məqalə oxumaq
+                    və iş yerində daha effektiv olmaq imkanı verəcək. Başlanğıc
+                    və orta səviyyələr üçün uyğundur.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -156,6 +154,13 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <footer>
+        <div className="container">
+          <div className="footer-con">
+            <img src={logo} alt="" />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
