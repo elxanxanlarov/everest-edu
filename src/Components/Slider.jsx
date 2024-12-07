@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import silderImage1 from "../../../src/assets/image/about-img.jpg";
+import silderImage2 from "../../../src/assets/image/logo.png";
 
 function Responsive() {
   var settings = {
@@ -42,22 +44,22 @@ function Responsive() {
     <div className="slider-container">
      <Slider {...settings}>
               <div className="item">
-                <img src="../../../src/assets/image/about-img.jpg" alt="" />
+                <img src={silderImage1} alt="" />
               </div>
               <div className="item">
-                <img src="../../../src/assets/image/logo.png" alt="" />
+                <img src={silderImage2} alt="" />
               </div>
               <div className="item">
-                <img src="../../../src/assets/image/about-img.jpg" alt="" />
+                <img src={silderImage1} alt="" />
               </div>
               <div className="item">
-                <img src="../../../src/assets/image/logo.png" alt="" />
+                <img src={silderImage2} alt="" />
               </div>
               <div className="item">
-                <img src="../../../src/assets/image/about-img.jpg" alt="" />
+                <img src={silderImage1} alt="" />
               </div>
               <div className="item">
-                <img src="../../../src/assets/image/logo.png" alt="" />
+                <img src={silderImage2} alt="" />
               </div>
             </Slider>
     </div>
