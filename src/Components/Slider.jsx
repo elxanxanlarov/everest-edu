@@ -1,14 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
-import silderImage1 from "../../../src/assets/image/about-img.jpg";
-import silderImage2 from "../../../src/assets/image/logo.png";
+import silderImage1 from "../../src/assets/image/about-img.jpg";
+import silderImage2 from "../../src/assets/image/logo.png";
 
 function Responsive() {
   var settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 4,
     initialSlide: 0,
     autoplay: true,
