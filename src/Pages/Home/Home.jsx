@@ -12,7 +12,7 @@ const Home = () => {
     const y = (e.clientY - window.innerHeight / 2) / 30;
     setPosition({ x, y });
   };
-  
+
   return (
     <div style={{ overflow: "hidden" }} onMouseMove={handleMouseMove}>
       <main className="hero">
@@ -83,14 +83,15 @@ const Home = () => {
                 <div className="right">
                   <h2>Haqqımızda</h2>
                   <p>
-                    Kursumuz 2019 cu ilden fəaliyyət göstərir. 2000+ Tələbəmiz
-                    xidmətimizdən yararlanıb.Biz tələbələrimizə fərdi yanaşma,
-                    müasir metodikalar və yüksək standartlarla tədris təmin
-                    edirik. Kurslarımız həm başlanğıc səviyyədə, həm də peşəkar
-                    səviyyədə biliklərini artırmaq istəyən şəxslər üçün nəzərdə
-                    tutulub Kursumuzda peşəkar müəllimlər və ixtisaslı
-                    mütəxəssislər dərs deyir. Hər biri öz sahəsində geniş
-                    təcrübəyə malikdir.
+                    Kursumuz 2019-cu ildən fəaliyyət göstərir və bu müddət
+                    ərzində 2000-dən çox tələbə xidmətimizdən yararlanıb. Biz
+                    tələbələrimizə fərdi yanaşma, müasir tədris metodikaları və
+                    yüksək standartlara uyğun keyfiyyətli təhsil təqdim edirik.
+                    Kurslarımız həm başlanğıc səviyyəsində olanlar, həm də
+                    biliklərini peşəkar səviyyədə artırmaq istəyən şəxslər üçün
+                    nəzərdə tutulub. Tədris prosesini peşəkar müəllimlər və
+                    ixtisaslı mütəxəssislər həyata keçirir. Onların hər biri öz
+                    sahəsində geniş təcrübəyə malikdir.
                   </p>
                 </div>
               </div>
@@ -99,7 +100,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Responsive/>
+      <Responsive />
       <section className="service">
         <h3 className="text-center">Xidmətlər</h3>
         <div className="container">
