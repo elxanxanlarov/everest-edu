@@ -2,6 +2,8 @@ import { useState } from "react";
 import flags from "../../../src/assets/image/flags.png";
 import logo from "../../../src/assets/image/logo.png";
 import aboutImg from "../../../src/assets/image/about-img.jpg";
+import Slider from "react-slick";
+import Responsive from "../../Components/Slider";
 const Home = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -10,7 +12,7 @@ const Home = () => {
     const y = (e.clientY - window.innerHeight / 2) / 30;
     setPosition({ x, y });
   };
-
+  
   return (
     <div style={{ overflow: "hidden" }} onMouseMove={handleMouseMove}>
       <main className="hero">
@@ -81,9 +83,14 @@ const Home = () => {
                 <div className="right">
                   <h2>Haqqımızda</h2>
                   <p>
-                    Bu kurs sizə ingilis dilində ünsiyyət qurmaq, məqalə oxumaq
-                    və iş yerində daha effektiv olmaq imkanı verəcək. Başlanğıc
-                    və orta səviyyələr üçün uyğundur.
+                    Kursumuz 2019 cu ilden fəaliyyət göstərir. 2000+ Tələbəmiz
+                    xidmətimizdən yararlanıb.Biz tələbələrimizə fərdi yanaşma,
+                    müasir metodikalar və yüksək standartlarla tədris təmin
+                    edirik. Kurslarımız həm başlanğıc səviyyədə, həm də peşəkar
+                    səviyyədə biliklərini artırmaq istəyən şəxslər üçün nəzərdə
+                    tutulub Kursumuzda peşəkar müəllimlər və ixtisaslı
+                    mütəxəssislər dərs deyir. Hər biri öz sahəsində geniş
+                    təcrübəyə malikdir.
                   </p>
                 </div>
               </div>
@@ -91,6 +98,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Responsive/>
       <section className="service">
         <h3 className="text-center">Xidmətlər</h3>
         <div className="container">
