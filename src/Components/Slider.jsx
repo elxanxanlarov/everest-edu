@@ -12,7 +12,7 @@ function Responsive() {
     slidesToScroll: 4,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1024,
@@ -41,7 +41,7 @@ function Responsive() {
     ]
   };
   return (
-    <div className="slider-container">
+    <div className="slider-container ">
      <Slider {...settings}>
               <div className="item">
                 <img src={silderImage1} alt="" />

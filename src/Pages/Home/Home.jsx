@@ -28,7 +28,7 @@ const Home = () => {
                 <div data-aos="fade-right" className="hero-left">
                   <p>Uğura gedən yol buradan başlayır!</p>
                   <span>Peşəkar təlimlərlə gələcəyini qur!</span> <br />
-                  <button className="btn">Indi Qoşul</button>
+                  <button className="btn">İndi Qoşul</button>
                   <img
                     className="banner-1"
                     src="https://thepixelcurve.com/edubin/lp/wp-content/uploads/sites/2/2024/04/EDUBIN0603-1.png"
@@ -99,8 +99,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <Responsive />
+      {/* Slider */}
+      <div className="my-slider">
+        <Responsive />
+      </div>
+      {/* Slider */}
       <section className="service">
         <h3 className="text-center">Xidmətlər</h3>
         <div className="container">
@@ -115,7 +118,7 @@ const Home = () => {
                     />
                   </div>
                   <div>
-                    <h2>Ingilis Dili</h2>
+                    <h2>İngilis Dili</h2>
                     <p>
                       Bu kurs sizə ingilis dilində ünsiyyət qurmaq, məqalə
                       oxumaq və iş yerində daha effektiv olmaq imkanı verəcək.
